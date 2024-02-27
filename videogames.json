@@ -1,0 +1,74 @@
+[
+    {
+        "title": "The Legend of Zelda: Breath of the Wild",
+        "platform": "Nintendo Switch",
+        "genre": "Action-adventure",
+        "release_year": 2017,
+        "rating": 4.9,
+        "developer": "Nintendo"
+    },
+    {
+        "title": "Super Mario Odyssey",
+        "platform": "Nintendo Switch",
+        "genre": "Platformer",
+        "release_year": 2017,
+        "rating": 4.8,
+        "developer": "Nintendo"
+    },
+    {
+        "title": "Red Dead Redemption 2",
+        "platform": "PlayStation 4, Xbox One",
+        "genre": "Action-adventure",
+        "release_year": 2018,
+        "rating": 4.7,
+        "developer": "Rockstar Games"
+    },
+    {
+        "title": "The Witcher 3: Wild Hunt",
+        "platform": "PlayStation 4, Xbox One, Microsoft Windows",
+        "genre": "Action role-playing",
+        "release_year": 2015,
+        "rating": 4.8,
+        "developer": "CD Projekt Red"
+    },
+    {
+        "title": "Grand Theft Auto V",
+        "platform": "PlayStation 3, Xbox 360, PlayStation 4, Xbox One, Microsoft Windows",
+        "genre": "Action-adventure",
+        "release_year": 2013,
+        "rating": 4.7,
+        "developer": "Rockstar Games"
+    },
+    {
+        "title": "The Elder Scrolls V: Skyrim",
+        "platform": "PlayStation 3, Xbox 360, PlayStation 4, Xbox One, Microsoft Windows",
+        "genre": "Action role-playing",
+        "release_year": 2011,
+        "rating": 4.8,
+        "developer": "Bethesda Game Studios"
+    },
+    {
+        "title": "NieR: Automata",
+        "platform": "PlayStation 4, Xbox One, Microsoft Windows",
+        "genre": "Action role-playing",
+        "release_year": 2017,
+        "rating": 4.8,
+        "developer": "PlatinumGames"
+    },
+    {
+        "title": "NieR Replicant ver.1.22474487139...",
+        "platform": "PlayStation 4, Xbox One, Microsoft Windows",
+        "genre": "Action role-playing",
+        "release_year": 2021,
+        "rating": 4.7,
+        "developer": "Toylogic"
+    },
+    {
+        "title": "Cyberpunk 2077",
+        "platform": "PlayStation 4, Xbox One, Microsoft Windows",
+        "genre": "Action role-playing",
+        "release_year": 2020,
+        "rating": 3.5,
+        "developer": "CD Projekt Red"
+    }
+]
