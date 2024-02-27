@@ -4,24 +4,14 @@ const mongoose = require('mongoose');
 const mongoURI = 'mongodb://localhost:27017/restfuldb';
 
 // connect to Mongo
-mongoose.connect(mongoURI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-})
+mongoose.connect(mongoURI)
 .then(() => console.log('MongoDB connected'))
 .catch(err => console.log(err));
 
-mongoose.connection('error', err => {
+mongoose.connection.on('error', err => {
     console.error('MongoDB connection error: ', err);
 });
 
-mongoose.connection('disconnected', () => {
+mongoose.connection.on('disconnected', () => {
     console.log('MongoDB disconnected');
-});
-
-process.on('SIGINT', () => {
-    mongoose.connection.close(() => {
-        console.log('MongoDB connection closed');
-        process.exit(0);
-    });
 });
