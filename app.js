@@ -1,8 +1,10 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 const app = express();
 const videogameRoutes = require('./src/routes/videogameRoutes.js');
 const db = require('./src/models/db.js');
 
+app.use(bodyParser.json());
 app.use('/videogames', videogameRoutes);
 
 const PORT = process.env.PORT || 3000;

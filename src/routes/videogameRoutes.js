@@ -1,9 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const VideoGame = require('../models/videogame.js');
+const options = { new: true, runValidators: true };
 
 // get all videogames
-router.post('/', async (req, res) => {
+router.get('/', async (req, res) => {
     try {
         const videoGames = await VideoGame.find();
         res.json(videoGames);
@@ -27,7 +28,8 @@ router.post('/', async (req, res) => {
         res.status(200).json(videoGame);
     } catch (error) {
         // code 500 if error occurs during creation
-        res.status(500).json({ error: 'Internal server error' });
+        console.error('Error creating: ', error);
+        res.status(500).json([{ error: 'Internal server error' }]);
     }
 });
 
@@ -41,6 +43,7 @@ router.get('/:id', async (req, res) => {
         if(!videoGame) {
             return res.status(404).json({ error: 'Videogame not found' });
         }
+
         // return game found vy ID
         res.json(videoGame);
     } catch (error) {
@@ -53,7 +56,7 @@ router.get('/:id', async (req, res) => {
 router.put('/:id', async (req, res) => {
     try {
         // find game by ID and update it with req.body, then ensure new doc is returned via new: true
-        const videoGame = await VideoGame.findByIdAndUpdate(req.params.id, req.body, { new: true });
+        const videoGame = await VideoGame.findByIdAndUpdate(req.params.id, req.body, options);
 
         // 404 if game doesn't exist
         if(!videoGame) {
