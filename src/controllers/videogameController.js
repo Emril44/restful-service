@@ -68,12 +68,13 @@ exports.updateVideogameById = async (req, res) => {
 exports.deleteVideogameById = async (req, res) => {
     try {
         // find game by ID and delete ot
-        const videoGame = VideoGame.findByIdAndDelete(req.params.id);
+        const videoGame = await VideoGame.findByIdAndDelete(req.params.id);
         
         // 404 if game isn't found
         if(!videoGame) {
             return res.status(404).json({ error: 'Videogame not found' });
         }
+
         // success message if delete went through
         res.status(200).json({ log: 'Videogame successfully deleted' });
     } catch (error) {
