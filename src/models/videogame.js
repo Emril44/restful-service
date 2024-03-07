@@ -5,10 +5,10 @@ const videoGameSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    platform: {
+    platform: [{
         type: String,
         required: false
-    },
+    }],
     genre: {
         type: String,
         required: false

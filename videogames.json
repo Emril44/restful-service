@@ -1,74 +1,162 @@
 [
     {
-        "title": "The Legend of Zelda: Breath of the Wild",
-        "platform": "Nintendo Switch",
+        "title": "The_Legend_of_Zelda:_Breath_of_the_Wild",
+        "platform": ["Nintendo_Switch"],
         "genre": "Action-adventure",
         "release_year": 2017,
         "rating": 4.9,
         "developer": "Nintendo"
     },
     {
-        "title": "Super Mario Odyssey",
-        "platform": "Nintendo Switch",
+        "title": "Super_Mario_Odyssey",
+        "platform": ["Nintendo_Switch"],
         "genre": "Platformer",
         "release_year": 2017,
         "rating": 4.8,
         "developer": "Nintendo"
     },
     {
-        "title": "Red Dead Redemption 2",
-        "platform": "PlayStation 4, Xbox One",
+        "title": "Red_Dead_Redemption_2",
+        "platform": ["PlayStation_4", "Xbox_One"],
         "genre": "Action-adventure",
         "release_year": 2018,
         "rating": 4.7,
-        "developer": "Rockstar Games"
+        "developer": "Rockstar_Games"
     },
     {
-        "title": "The Witcher 3: Wild Hunt",
-        "platform": "PlayStation 4, Xbox One, Microsoft Windows",
-        "genre": "Action role-playing",
+        "title": "The_Witcher_3:_Wild_Hunt",
+        "platform": ["PlayStation_4", "Xbox_One", "Microsoft_Windows"],
+        "genre": "Action_role-playing",
         "release_year": 2015,
         "rating": 4.8,
-        "developer": "CD Projekt Red"
+        "developer": "CD_Projekt_Red"
     },
     {
-        "title": "Grand Theft Auto V",
-        "platform": "PlayStation 3, Xbox 360, PlayStation 4, Xbox One, Microsoft Windows",
+        "title": "Grand_Theft_Auto_V",
+        "platform": ["PlayStation_3", "Xbox_360", "PlayStation_4", "Xbox_One", "Microsoft_Windows"],
         "genre": "Action-adventure",
         "release_year": 2013,
         "rating": 4.7,
-        "developer": "Rockstar Games"
+        "developer": "Rockstar_Games"
     },
     {
-        "title": "The Elder Scrolls V: Skyrim",
-        "platform": "PlayStation 3, Xbox 360, PlayStation 4, Xbox One, Microsoft Windows",
-        "genre": "Action role-playing",
+        "title": "The_Elder_Scrolls_V:_Skyrim",
+        "platform": ["PlayStation_3", "Xbox_360", "PlayStation_4", "Xbox_One", "Microsoft_Windows"],
+        "genre": "Action_role-playing",
         "release_year": 2011,
         "rating": 4.8,
-        "developer": "Bethesda Game Studios"
+        "developer": "Bethesda_Game_Studios"
     },
     {
-        "title": "NieR: Automata",
-        "platform": "PlayStation 4, Xbox One, Microsoft Windows",
-        "genre": "Action role-playing",
+        "title": "NieR:_Automata",
+        "platform": ["PlayStation_4", "Xbox_One", "Microsoft_Windows"],
+        "genre": "Action_role-playing",
         "release_year": 2017,
         "rating": 4.8,
         "developer": "PlatinumGames"
     },
     {
-        "title": "NieR Replicant ver.1.22474487139...",
-        "platform": "PlayStation 4, Xbox One, Microsoft Windows",
-        "genre": "Action role-playing",
+        "title": "NieR_Replicant_ver.1.22474487139...",
+        "platform": ["PlayStation_4", "Xbox_One", "Microsoft_Windows"],
+        "genre": "Action_role-playing",
         "release_year": 2021,
         "rating": 4.7,
         "developer": "Toylogic"
     },
     {
-        "title": "Cyberpunk 2077",
-        "platform": "PlayStation 4, Xbox One, Microsoft Windows",
-        "genre": "Action role-playing",
+        "title": "Cyberpunk_2077",
+        "platform": ["PlayStation_4", "Xbox_One", "Microsoft_Windows"],
+        "genre": "Action_role-playing",
         "release_year": 2020,
         "rating": 3.5,
-        "developer": "CD Projekt Red"
-    }
+        "developer": "CD_Projekt_Red"
+    },
+    {
+        "title": "Super_Mario_64",
+        "platform": ["Nintendo_64"],
+        "genre": "Platformer",
+        "release_year": 1996,
+        "rating": 4.8,
+        "developer": "Nintendo"
+    },
+    {
+        "title": "The_Legend_of_Zelda:_Ocarina_of_Time",
+        "platform": ["Nintendo_64"],
+        "genre": "Action-adventure",
+        "release_year": 1998,
+        "rating": 4.9,
+        "developer": "Nintendo"
+    },
+    {
+        "title": "Metal_Gear_Solid",
+        "platform": ["PlayStation"],
+        "genre": "Stealth-action",
+        "release_year": 1998,
+        "rating": 4.7,
+        "developer": "Konami"
+    },
+    {
+        "title": "Half-Life",
+        "platform": ["Microsoft_Windows"],
+        "genre": "First-person_shooter",
+        "release_year": 1998,
+        "rating": 4.9,
+        "developer": "Valve"
+    },
+    {
+        "title": "Doom",
+        "platform": ["Microsoft_DOS"],
+        "genre": "First-person_shooter",
+        "release_year": 1993,
+        "rating": 4.8,
+        "developer": "id_Software"
+    },
+    {
+        "title": "Quake",
+        "platform": ["Microsoft_Windows"],
+        "genre": "First-person_shooter",
+        "release_year": 1996,
+        "rating": 4.7,
+        "developer": "id_Software"
+    },
+    {
+        "title": "Halo:_Combat_Evolved",
+        "platform": ["Xbox", "Microsoft_Windows"],
+        "genre": "First-person_shooter",
+        "release_year": 2001,
+        "rating": 4.7,
+        "developer": "Bungie"
+    },
+    {
+        "title": "Grand_Theft_Auto:_San_Andreas",
+        "platform": ["PlayStation_2", "Xbox", "Microsoft_Windows"],
+        "genre": "Action-adventure",
+        "release_year": 2004,
+        "rating": 4.8,
+        "developer": "Rockstar_Games"
+    },
+    {
+        "title": "The_Elder_Scrolls_IV:_Oblivion",
+        "platform": ["PlayStation_3", "Xbox_360", "Microsoft_Windows"],
+        "genre": "Action_role-playing",
+        "release_year": 2006,
+        "rating": 4.9,
+        "developer": "Bethesda_Game_Studios"
+    },
+    {
+        "title": "Half-Life_2",
+        "platform": ["Microsoft_Windows"],
+        "genre": "First-person_shooter",
+        "release_year": 2004,
+        "rating": 4.9,
+        "developer": "Valve"
+    },
+    {
+        "title": "Portal",
+        "platform": ["Microsoft_Windows", "Xbox_360", "PlayStation_3"],
+        "genre": "Puzzle-platform",
+        "release_year": 2007,
+        "rating": 4.8,
+        "developer": "Valve"
+    }    
 ]

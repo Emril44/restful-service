@@ -1,50 +1,50 @@
 [
-    {
+  {
       "firstName": "John",
       "lastName": "Doe",
       "parentName": "Michael",
-      "email": "john.doe@example.com",
+      "email": "john_doe@example.com",
       "age": 30,
-      "city": "New York"
-    },
-    {
+      "city": "New_York"
+  },
+  {
       "firstName": "Jane",
       "lastName": "Smith",
       "parentName": "Emily",
-      "email": "jane.smith@example.com",
+      "email": "jane_smith@example.com",
       "age": 25,
-      "city": "Los Angeles"
-    },
-    {
+      "city": "Los_Angeles"
+  },
+  {
       "firstName": "David",
       "lastName": "Johnson",
       "parentName": "Robert",
-      "email": "david.johnson@example.com",
+      "email": "david_johnson@example.com",
       "age": 35,
       "city": "Chicago"
-    },
-    {
-        "firstName": "Emily",
-        "lastName": "Davis",
-        "parentName": "Sarah",
-        "email": "emily.davis@example.com",
-        "age": 28,
-        "city": "San Francisco"
-      },
-      {
-        "firstName": "Michael",
-        "lastName": "Brown",
-        "parentName": "Chris",
-        "email": "michael.brown@example.com",
-        "age": 40,
-        "city": "Houston"
-      },
-      {
-        "firstName": "Sophia",
-        "lastName": "Martinez",
-        "parentName": "Luis",
-        "email": "sophia.martinez@example.com",
-        "age": 22,
-        "city": "Miami"
-      }
-  ]
+  },
+  {
+      "firstName": "Emily",
+      "lastName": "Davis",
+      "parentName": "Sarah",
+      "email": "emily_davis@example.com",
+      "age": 28,
+      "city": "San_Francisco"
+  },
+  {
+      "firstName": "Michael",
+      "lastName": "Brown",
+      "parentName": "Chris",
+      "email": "michael_brown@example.com",
+      "age": 40,
+      "city": "Houston"
+  },
+  {
+      "firstName": "Sophia",
+      "lastName": "Martinez",
+      "parentName": "Luis",
+      "email": "sophia_martinez@example.com",
+      "age": 22,
+      "city": "Miami"
+  }
+]

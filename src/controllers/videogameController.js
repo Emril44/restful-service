@@ -3,7 +3,33 @@ const options = { new: true, runValidators: true };
 
 exports.getAllVideogames = async (req, res) => {
     try {
-        const videoGames = await VideoGame.find();
+        let query = {};
+
+        if (req.query.title) {
+            query.title = { $regex: req.query.title, $options: 'i' };
+        }
+
+        if (req.query.developer) {
+            query.developer = { $regex: req.query.developer, $options: 'i' };
+        }
+
+        if (req.query.platform) {
+            query.platform = { $regex: req.query.platform, $options: 'i' };
+        }
+
+        if (req.query.releaseYearRange) {
+            const releaseYearRanges = {
+                '1991-2000': { $gte: 1991, $lte: 2000 },
+                '2001-2010': { $gte: 2001, $lte: 2010 },
+                '2011-2020': { $gte: 2011, $lte: 2020 },
+                '2020+': { $gte: 2021 }
+            }
+
+            query.release_year = releaseYearRanges[req.query.releaseYearRange];
+        }
+
+        const videoGames = await VideoGame.find(query).sort({ release_year: 1 });
+
         res.json(videoGames);
     } catch (error) {
         res.status(500).json({ message: error.message });

@@ -3,7 +3,36 @@ const options = { new: true, runValidators: true };
 
 exports.getAllUsers = async (req, res) => {
     try {
-        const users = await User.find();
+        let query = {};
+
+        if(req.query.email) {
+            query.email = { $regex: req.query.email, $options: 'i'};
+        }
+
+        if(req.query.firstName) {
+            query.firstName = { $regex: req.query.firstName, $options: 'i'};
+        }
+
+        if(req.query.lastName) {
+            query.lastName = { $regex: req.query.lastName, $options: 'i'};
+        }
+
+        if(req.query.parentName) {
+            query.parentName = { $regex: req.query.parentName, $options: 'i'};
+        }
+
+        if (req.query.ageRange) {
+            const ageRanges = {
+                '18-25': { $gte: 18, $lte: 25 },
+                '26-35': { $gte: 26, $lte: 35 },
+                '36-51': { $gte: 36, $lte: 51 },
+                '52+': { $gte: 52 }
+            };
+        
+            query.age = ageRanges[req.query.ageRange];
+        }
+
+        const users = await User.find(query);
         res.json(users);
     } catch (error) {
         res.status(500).json({ message: error.message });
