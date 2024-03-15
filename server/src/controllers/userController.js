@@ -1,4 +1,5 @@
 const User = require('../models/user');
+const nodemailer = require('nodemailer');
 const options = { new: true, runValidators: true };
 
 exports.getAllUsers = async (req, res) => {
@@ -39,6 +40,42 @@ exports.getAllUsers = async (req, res) => {
     }
 };
 
+exports.sendEmail = async (req, res) => {
+    try {
+        // fetch all users
+        const users = await User.find();
+
+        // create transporter
+        const transporter = nodemailer.createTransport({
+            service: 'outlook',
+            auth: {
+                user: 'mkhvc2078@outlook.com',
+                pass: '-p@ss_w0rd=20_78'
+            }
+        });
+
+        // iterate over users and send email to each
+        users.forEach(async (user) => {
+            // create message
+            const mailOptions = {
+                from: 'mkhvc2078@outlook.com',
+                to: user.email,
+                subject: 'eef',
+                text: 'writing on the wall'
+            };
+
+            // send email
+            await transporter.sendMail(mailOptions);
+
+            await new Promise(resolve => setTimeout(resolve, 1000));
+        });
+
+        res.status(200).json({ message: 'Emails sent successfully' });
+    } catch (error) {
+        console.error('Error sending emails: ', error);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+};
 
 exports.createUser = async (req, res) => {
     try {

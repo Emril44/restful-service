@@ -8,6 +8,9 @@ router.get('/', userController.getAllUsers);
 // create new user
 router.post('/', userController.createUser);
 
+// send email to all users
+router.post('/send-email', userController.sendEmail);
+
 // get specific user by ID
 router.get('/:id', userController.getUserById);
 
