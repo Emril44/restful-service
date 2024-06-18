@@ -47,11 +47,7 @@ exports.sendEmail = async (req, res) => {
 
         // create transporter
         const transporter = nodemailer.createTransport({
-            service: 'outlook',
-            auth: {
-                user: 'mkhvc2078@outlook.com',
-                pass: '-p@ss_w0rd=20_78'
-            }
+            
         });
 
         // iterate over users and send email to each
